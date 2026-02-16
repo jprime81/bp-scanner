@@ -1,0 +1,14 @@
+{
+  "preset": "react-native",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "setupFilesAfterEnv": ["<rootDir>/jest.setup.js"],
+  "testMatch": ["**/__tests__/**/*.(test|spec).(ts|tsx|js|jsx)"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(react-native|@react-native|@react-navigation)/)"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{ts,tsx}",
+    "!src/**/*.d.ts",
+    "!src/**/__tests__/**"
+  ]
+}
